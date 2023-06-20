@@ -22,5 +22,10 @@ export class CadastroEmpresaService {
 
   }
 
+  remove(cadastroEmpresa : CadastroEmpresa):Observable<void>{ //se fosse para devolver apenas um cliente: Observable<Client
+
+    return this.http.delete<void>(`${this.url}/${cadastroEmpresa.id}`);
+  }
+
 
 }

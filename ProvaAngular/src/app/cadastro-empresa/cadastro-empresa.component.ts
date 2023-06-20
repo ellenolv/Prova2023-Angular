@@ -49,4 +49,12 @@ export class CadastroEmpresaComponent{
       }
     );
   }
+
+  remove(cadastroEmpresa : CadastroEmpresa):void{
+    this.cadastroEmpresaService.remove(cadastroEmpresa).subscribe(
+      {
+        //a resposta chega pelo next, ou seja, se tudo for feito com sucesso
+        next:() => this.loadEmpresas()
+      });
+  }
 }

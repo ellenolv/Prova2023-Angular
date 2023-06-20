@@ -1,4 +1,6 @@
+
 <div class="container">
+  <h1>CADASTRO DE EMPRESAS</h1>
   <form [formGroup]="formGroupEmpresas">
     <div class="mb-3">
       <label for="razaoSocial" class="form-label">Razão Social: </label>
@@ -37,16 +39,18 @@
       <th scope="col">Telefone</th>
       <th scope="col">Endereço</th>
       <th scope="col">Delivery</th>
+      <th scope="col"> </th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let empresa of cadastroEmpresas ">
       <th scope="row">{{empresa.id}}</th>
       <td>{{empresa.razaoSocial}}</td>
-      <td>{{empresa.numeroContato}}</td>
       <td>{{empresa.cnpj}}</td>
+      <td>{{empresa.numeroContato}}</td>
       <td>{{empresa.endereco}}</td>
       <td>{{empresa.delivery}}</td>
+      <td><button type="button" class="btn btn-danger" (click)="remove(empresa)">Remover</button></td>
     </tr>
   </tbody>
 </table>

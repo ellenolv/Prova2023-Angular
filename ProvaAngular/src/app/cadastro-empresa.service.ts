@@ -17,5 +17,10 @@ export class CadastroEmpresaService {
 
     return this.http.post<CadastroEmpresa>(this.url, cadastroEmpresa);
   }
+  getEmpresas():Observable<CadastroEmpresa[]>{
+    return this.http.get<CadastroEmpresa[]>(this.url);
+
+  }
+
 
 }

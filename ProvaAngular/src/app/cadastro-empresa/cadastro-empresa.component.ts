@@ -36,5 +36,17 @@ export class CadastroEmpresaComponent{
      );
    }
 
+   ngOnInit(): void {
+    this.loadEmpresas(); //carrega os suppliers
+  }
 
+
+  loadEmpresas() {
+    this.cadastroEmpresaService.getEmpresas().subscribe( //
+      {
+        next: data => this.cadastroEmpresas = data,
+      error: () => console.log('error')
+      }
+    );
+  }
 }

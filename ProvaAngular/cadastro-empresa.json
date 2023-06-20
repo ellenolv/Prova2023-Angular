@@ -2,27 +2,19 @@
   "cadastro-empresa": [
     {
       "id": 1,
-      "razaoSocial ": "Burger King",
-      "cnpj": 13574594000196,
-      "numeroContato": 11999999,
-      "delivery": true,
-      "endereco": "Av. Dr. Otaviano Pereira Mendes, 359"
-    },
-    {
-      "id": 2,
-      "razaoSocial": "SUBWAY DO BRASIL LTDA",
-      "numeroContato": 9999999999,
-      "delivery": true,
-      "cnpj": null,
-      "endereco": "Av. Dr. Ermelindo Maffei, 1199 - São Luiz, Itu - SP, 13304-305"
-    },
-    {
-      "id": 3,
       "razaoSocial": "SUBWAY DO BRASIL LTDA ",
       "numeroContato": 15151515,
       "delivery": true,
       "cnpj": "02.891.567/0001-20",
       "endereco": "Av. Dr. Ermelindo Maffei, 1199 - São Luiz, Itu - SP, 13304-305"
+    },
+    {
+      "id": 2,
+      "razaoSocial": "BK BRASIL OPERACAO E ASSESSORIA A RESTAURANTES S.A.",
+      "numeroContato": 11515131151,
+      "delivery": false,
+      "cnpj": "13.574.594/0001-96 ",
+      "endereco": " Av. Dr. Otaviano Pereira Mendes, 359 - Liberdade, Itu - SP, 13301-000"
     }
   ]
 }
